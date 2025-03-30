@@ -1,0 +1,45 @@
+/* Floating Chat Button */
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  position: fixed;
+  right: 20px;
+  bottom: -20px;
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
