@@ -12,7 +12,8 @@ const Chatbot = () => {
 
   const fetchAIResponse = async (inputText) => {
     try {
-      const apiKey = "AIzaSyA04Sp2UHFBvEu-HqWU7Z7ZVf0CPvzfZZ4";
+      const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+
       if (!apiKey) throw new Error("API Key is missing.");
 
       const genAI = new GoogleGenerativeAI(apiKey);
